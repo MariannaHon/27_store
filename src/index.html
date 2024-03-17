@@ -17,29 +17,31 @@
     <link rel="stylesheet" href="./css/common.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <nav>
+    <!-- ============ Header ============ -->
+    <header class="head">
+      <div class="container">
+        <nav class="navigation">
           <a href="./index.html" class="logo">27 Store</a>
-          <div>
-            <ul>
-              <li><a href="./shop.html">Shop ></a></li>
-              <li><a href="./brands.html">Brands ></a></li>
-              <li><a href="./countries.html">Countries ></a></li>
+          <div class="list-nav-container">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="./shop.html" class="nav-link">Shop ></a></li>
+              <li class="nav-item"><a href="./brands.html" class="nav-link">Brands ></a></li>
+              <li class="nav-item"><a href="./countries.html" class="nav-link">Countries ></a></li>
             </ul>
           </div>
         </nav>
-        <div>
-          <svg class="" width="26" height="16">
+        <div class="search-container">
+          <svg class="flag-icon" width="26" height="20">
             <use href="./img/icons.svg#icon-britain"></use>
           </svg>
-          <ul>
-            <li>Search</li>
-            <li>Bag</li>
+          <ul class="search-list">
+            <li class="search-item">Search</li>
+            <li class="search-item">Bag</li>
           </ul>
         </div>
       </div>
     </header>
+    <!-- =============== Modal Shop =============== -->
     <div class="hide">
       <ul>
         <li><a href="./1-shop/1-new-arrivals.html">New arrivals</a></li>
@@ -53,6 +55,7 @@
         <li><a href="./1-shop/9-all.html">All</a></li>
       </ul>
     </div>
+    <!-- =============== Modal Brands =============== -->
     <div class="hide">
       <ul>
         <li><a href="./2-brands/1-stussy.html">Stussy</a></li>
@@ -65,6 +68,7 @@
         <li><a href="./2-brands/8-all.html">All</a></li>
       </ul>
     </div>
+    <!-- =============== Modal Countries =============== -->
     <div class="hide">
       <ul>
         <li><a href="./3-countries/1-poland.html">Poland</a></li>
@@ -78,6 +82,7 @@
         <li><a href="./3-countries/9-all.html">All</a></li>
       </ul>
     </div>
+    <!-- =============== Modal languages =============== -->
     <div class="hide">
       <svg class="" width="26" height="16">
         <use href="./img/icons.svg#icon-poland"></use>
@@ -90,11 +95,13 @@
         <use href="./img/icons.svg#icon-britain"></use>
       </svg>
     </div>
+    <!-- =============== Modal Search =============== -->
     <div class="hide">
       <svg class="" width="26" height="16">
         <use href="./img/icons.svg#icon-search"></use>
       </svg>
     </div>
+    <!-- =============== Modal Bag =============== -->
     <div class="hide">
       <div>
         <div>
@@ -126,47 +133,64 @@
       </div>
     </div>
     <main>
-      <section>
+      <!-- =============== Photos =============== -->
+      <section class="section-photo">
         <h1 class="visually-hidden">Unique stylish clothes for everyone</h1>
-        <img src="./img/img1.jpg" alt="Boys in stylish clothes.">
-        <img src="./img/img2.jpg" alt="Stylish boy in big city.">
-        <img src="./img/img3.jpg" alt="Stylish smoking men.">
-      </section>
-      <section>
-        <div>
-          <p>27 store is a new developing team who is eager to make fashion more accessible.</p>
-          <p>We are europewide looking for new brands. as our aim is to gather young, promising designers who have a lot to say
-            under
-            one roof.</p>
-          <p>Ultimately, it’s gonna be the place where brands from all 27 EU countries will be located.</p>
-        </div>
-      </section>
-      <section>
-        <div>
-          <ul>
-            <h3>Accessible Fashion</h3>
-            <li><a href="">Shop from a diverse</a></li>
-            <li><a href="">range of young</a></li>
-            <li><a href="">brands and discover</a></li>
-            <li><a href="">your new favorite designers</a></li>
+        <div class="img-container">
+          <ul class="photo-container">
+            <li>
+              <img src="./img/img1.jpg" alt="Boys in stylish clothes." width="590" height="885">
+            </li>
+            <li>
+              <img src="./img/img2.jpg" alt="Stylish boy in big city." width="590" height="881">
+            </li>
+            <li>
+              <img src="./img/img3.jpg" alt="Stylish smoking men." width="1200" height="698" class="photo">
+            </li>
           </ul>
         </div>
-        <div>
-          <h3>Unleash Style</h3>
-          <p>Express yourself with our collection of trendy and unique fashion pieces.</p>
+      </section>
+      <!-- =============== About us =============== -->
+      <section class="section">
+        <div class="container about">
+          <p class="text">27 store is a new developing team who is eager to make fashion more accessible.</p>
+          <p class="text">We are europewide looking for new brands. as our aim is to gather young, promising designers who have a lot to say
+            under
+            one roof.</p>
+          <p class="text">Ultimately, it’s gonna be the place where brands from all 27 EU countries will be located.</p>
+        </div>
+
+        <div class="hz">
+          <div class="text-wrapper">
+            <ul class="hz-list">
+              <h3 class="hz-title">Accessible Fashion</h3>
+              <li><a href="" class="hz-text">Shop from a diverse</a></li>
+              <li><a href="" class="hz-text">range of young</a></li>
+              <li><a href="" class="hz-text">brands and discover</a></li>
+              <li><a href="" class="hz-text">your new favorite designers</a></li>
+            </ul>
+          </div>
+          <div class="second-wrapper">
+            <h3 class="hz-title">Unleash Style</h3>
+            <p class="hz-text">Express yourself with our collection of trendy and unique fashion pieces.</p>
+          </div>
         </div>
       </section>
-      <section>
-        <h2>Discover unique fashion collections</h2>
-        <form class="form-bottom">
-          <label class="subscribe">
-            <input type="email" name="email" placeholder="Enter your e-mail" class="email-bottom">
-          </label>
-          <button type="submit" class="button-bottom">Join now</button>
-          <p>By joining you afree with our terms and conditions</p>
-        </form>
+      <!-- =============== Subscribe =============== -->
+      <section class="section">
+        <div class="container">
+          <h2 class="sub-title">Discover unique fashion collections</h2>
+          <form class="form">
+            <label class="subscribe">
+              <input type="email" name="email" placeholder="Enter your e-mail" class="email-bottom">
+            </label>
+            <button type="submit" class="button-bottom">Join now</button>
+            <p>By joining you afree with our terms and conditions</p>
+          </form>
+        </div>
       </section>
     </main>
+    <!-- =============== Footer =============== -->
     <footer>
       <div>
         <ul>
