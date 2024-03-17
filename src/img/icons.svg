@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="icon-poland" viewBox="0 0 47 32">
+      <path fill="#fff" d="M40 21.142h.067V1.267H6.6v19.875H40z" style="fill:var(--color1, #fff)" />
+      <path fill="#dc143c" d="M40 21.142h.067V11.138H6.6v10.004H40z" style="fill:var(--color2, #dc143c)" />
+    </symbol>
+    <symbol id="icon-russian" viewBox="0 0 51 32">
+      <path fill="#fff" d="M1.882 1.788h-.094v28.43h47.874V1.788H1.882z" style="fill:var(--color1, #fff)" />
+      <path fill="#0039a6" d="M1.882 11.202h-.094v19.016h47.874V11.202H1.882z" style="fill:var(--color3, #0039a6)" />
+      <path fill="#d52b1e" d="M1.882 20.616h-.094v9.602h47.874v-9.602H1.882z" style="fill:var(--color4, #d52b1e)" />
+    </symbol>
+    <symbol id="icon-britain" viewBox="0 0 52 32">
+      <path fill="#012169" d="M2 1.804h-.1v29.602h49.845V1.804H2z" style="fill:var(--color5, #012169)" />
+      <path fill="#fff"
+        d="m7.868 1.818-.023-.014H1.9v4.077l18.442 10.846L1.9 27.573v3.832h6.411l.024-.014 18.489-10.934 18.617 10.948h6.306v-3.894l-.049-.029-18.47-10.817L51.747 5.758V1.803h-6.178l-.024.014-18.799 11.057L7.869 1.817z"
+        style="fill:var(--color1, #fff)" />
+      <path fill="#c8102e"
+        d="m34.94 19.03-.023-.014h-4.665l21.493 12.463v-2.681L34.94 19.03zm-14.225 1.291-.029-.135L1.634 31.407h4.583l.024-.014 14.955-8.857-.015-.07-.465-2.144zm31.03-18.417v-.1h-4.006l-.023.014-15.327 9.031-.003.053-.155 2.695-.011.188L51.746 2.144v-.241zM2.05 1.818l-.15-.087v2.804l13.985 8.251h5.025L2.05 1.819z"
+        style="fill:var(--color6, #c8102e)" />
+      <path fill="#fff"
+        d="M20.694 1.804h-.1v9.801H1.9v10.001h18.694v9.801h12.611v-9.801h18.539V11.605H33.205V1.804H20.694z"
+        style="fill:var(--color1, #fff)" />
+      <path fill="#c8102e" d="M2 13.626h-.1v6.08h21.177v11.7h7.647v-11.7h21.021v-6.08H30.724V1.804h-7.647v11.822H2z"
+        style="fill:var(--color6, #c8102e)" />
+    </symbol>
+    <symbol id="icon-search" viewBox="0 0 32 32">
+      <path
+        d="m31.008 27.231-7.58-6.447c-.784-.705-1.622-1.029-2.299-.998a11.954 11.954 0 0 0 2.87-7.787c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-.031.677.293 1.515.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007.23s.997-2.903-.23-4.007zM12 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16z" />
+    </symbol>
+  </defs>
+</svg>
