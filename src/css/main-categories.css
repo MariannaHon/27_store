@@ -70,25 +70,19 @@ img {
   overflow: hidden;
 }
 
-.section {
-  max-width: 1200px;
-  padding: 52px 0;
-  margin: 0 auto;
-}
-
 .container {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* ===================== Header ==================== */
+/* ============ Header ============== */
 
 .head {
   border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16),
-      0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 header .container {
@@ -165,77 +159,109 @@ header .container {
   color: #000;
 }
 
-/* =============== Photos =============== */
+/* ============== Head of categories ============== */
 
-.section-photo {
+.head-section {
+  display: flex;
+  max-width: 100%;
+
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.categories-container {
+  display: flex;
   max-width: 1200px;
-  padding-bottom: 52px;
   margin: 0 auto;
 }
 
-.img-container {
+.categories-list {
   display: flex;
-  margin-top: 20px;
+  justify-content: space-around;
+  gap: 50px;
 }
 
-.photo-container {
+.categories-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.0625;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  margin: 16px 0;
+}
+
+.back {
+  margin-right: 40px;
+}
+
+.categories-link {
+  padding: 20px 0;
+}
+
+/* ============== Categories body ================ */
+
+.store-section {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.store-container {
+  padding: 62px 0;
+  margin-bottom: 512px;
+}
+
+.store-list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-/* =============== About us =============== */
-
-.about {
-  display: block;
-  margin: 0 auto;
+.image {
+  margin-bottom: 16px;
 }
 
 .text {
-  font-size: 24px;
-  line-height: 1.88462;
+  font-size: 16px;
+  line-height: 1.0625;
   text-transform: uppercase;
   color: #000;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 
-.hz {
+.brand {
+  font-weight: 500;
+}
+
+.i {
+  margin-left: 30%;
+}
+
+.small-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21429;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* ================ Footer ================== */
+
+.bottom-container {
   display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.text-wrapper {
-  margin-right: 306px;
-}
-
-.hz-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.92308;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #000;
-}
-
-.hz-text {
-  width: 400px;
-  font-size: 24px;
-  line-height: 1.65385;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #000;
-}
-
-.second-wrapper {
-  width: 404px;
-}
-
-/* =============== Subscribe =============== */
-
-.sub .container {
+.sub .wrapper {
   display: block;
   max-width: 692px;
   margin-left: 0;
-  margin-bottom: 512px;
+  margin-bottom: 70px;
 }
 
 .sub-title {
@@ -293,17 +319,14 @@ header .container {
   color: #000;
 }
 
-/* ============== Footer =============== */
+.bottom-wrapper {
+  display: flex;
+}
 
 .bottom {
   display: flex;
   max-width: 1200px;
   padding: 24px 0;
-  margin: 0 auto;
-}
-
-.bottom-container {
-  display: flex;
   margin-right: auto;
 }
 
@@ -322,6 +345,7 @@ header .container {
 
 .sign-container {
   display: flex;
+  padding: 24px 0;
 }
 
 .sign {

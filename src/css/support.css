@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Basic */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
+h1,
+і h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.hide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.40);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hide.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ============ Header ============== */
+
+.head {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+header .container {
+  display: flex;
+  max-width: 1200px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 0.70833;
+  text-transform: uppercase;
+  color: #000;
+  margin-right: 96px;
+}
+
+.navigation {
+  display: inline-flex;
+  align-items: center;
+}
+
+.list-nav-container {
+  display: flex;
+  margin-right: auto;
+}
+
+.nav-list {
+  display: flex;
+  gap: 36px;
+  width: calc((100% - 72px) / 3);
+}
+
+.nav-item {
+  flex-shrink: 0;
+}
+
+.nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.41667;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.search-container {
+  display: flex;
+  margin-left: auto;
+  padding: 24px 0;
+}
+
+.flag-icon {
+  margin-right: 24px;
+}
+
+.search-list {
+  display: flex;
+  gap: 24px;
+  width: calc((100% - 24px) / 2);
+}
+
+.search-item {
+  flex-shrink: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.41667;
+  text-transform: uppercase;
+  color: #000;
+}

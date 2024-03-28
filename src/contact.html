@@ -13,28 +13,28 @@
     href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
 </head>
 <body>
-  <header>
-    <div>
-      <nav>
+  <header class="head">
+    <div class="container">
+      <nav class="navigation">
         <a href="./index.html" class="logo">27 Store</a>
-        <div>
-          <ul>
-            <li><a href="./shop.html">Shop ></a></li>
-            <li><a href="./brands.html">Brands ></a></li>
-            <li><a href="./countries.html">Countries ></a></li>
+        <div class="list-nav-container">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="./shop.html" class="nav-link">Shop ></a></li>
+            <li class="nav-item"><a href="./brands.html" class="nav-link">Brands ></a></li>
+            <li class="nav-item"><a href="./countries.html" class="nav-link">Countries ></a></li>
           </ul>
         </div>
       </nav>
-      <div>
-        <svg class="icon-logo" width="21" height="21">
-          <use href="./images/icons.svg#icon-chocolate"></use>
+      <div class="search-container">
+        <svg class="flag-icon" width="26" height="20">
+          <use href="./img/icons.svg#icon-britain"></use>
         </svg>
-        <ul>
-          <li>Search</li>
-          <li>Bag</li>
+        <ul class="search-list">
+          <li class="search-item">Search</li>
+          <li class="search-item">Bag</li>
         </ul>
       </div>
     </div>
@@ -125,26 +125,30 @@
     </div>
   </div>
   <main>
-    <h1>Contacts:</h1>
-    <address>
-      <ul class="">
-        <li><a href="./index.html">Back</a></li>
-        <li class="">
-          <a href="mailto:info@devstudio.com" class="">info@devstudio.com</a>
-        </li>
-        <li class="">
-          <a href="tel:+110001111111" class="">+11 (000) 111-11-11</a>
-        </li>
-      </ul>
-    </address>
+    <section class="section">
+      <a href="./index.html" class="categories-link back">Back</a>
+      <h1 class="title">Contacts:</h1>
+      <address class="block">
+        <ul class="list">
+          <li class="contacts-item">
+            <a href="mailto:info@devstudio.com" class="categories-link">info@devstudio.com</a>
+          </li>
+          <li class="contacts-item">
+            <a href="tel:+110001111111" class="categories-link">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
+    </section>
   </main>
-  <footer>
-    <div>
-      <ul>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./support.html">Support</a></li>
+  <footer class="bottom">
+    <div class="bottom-container">
+      <ul class="bottom-list">
+        <li class="bottom-item"><a href="./contact.html">Contact</a></li>
+        <li class="bottom-item"><a href="./support.html">Support</a></li>
       </ul>
-      <p>2024 27store.eu</p>
+    </div>
+    <div class="sign-container">
+      <p class="sign">2024 27store.eu</p>
     </div>
   </footer>
 </body>
