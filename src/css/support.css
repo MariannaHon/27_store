@@ -70,10 +70,18 @@ img {
   overflow: hidden;
 }
 
-.container {
+.section {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  padding: 50px 0;
+  margin-bottom: 250px;
 }
 
 /* ============ Header ============== */
@@ -156,5 +164,233 @@ header .container {
   font-size: 12px;
   line-height: 1.41667;
   text-transform: uppercase;
+  color: #000;
+}
+
+/* ================ Main ================ */
+
+.back {
+  padding: 20px 0;
+  margin-bottom: 50px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.0625;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.title-input {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 0.53125;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 10%;
+}
+
+.label-container {
+  margin-bottom: 18px;
+}
+
+.text-inputs {
+  display: flex;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  width: 100%;
+  border: 1.5px solid rgba(0, 0, 0, 0.267);
+  box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+  border-radius: 13px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 22px 375px 22px 52px;
+  gap: 14px;
+
+  font-size: 18px;
+  line-height: 0.94444;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* .input:focus {
+  border: 1px solid #FD9222;
+}
+
+.input:active {
+  border: 1px solid #FD9222;
+}
+
+.input:focus+.icon-input {
+  stroke: #FD9222;
+}
+
+.input:active+.icon-input {
+  stroke: #FD9222;
+} */
+
+.icon-input {
+  fill: none;
+  stroke: #404040;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-container-comment {
+  margin-bottom: 18px;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  gap: 40px;
+  border-radius: 13px;
+  border: 1.5px solid rgba(0, 0, 0, 0.267);
+  background-color: transparent;
+  padding: 22px 24px 93px 24px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment::placeholder {
+  color: rgba(0, 0, 0, 0.267);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+/* .comment:focus {
+  border: 1px solid #FD9222;
+}
+
+.comment:active {
+  border: 1px solid #FD9222;
+} */
+
+.label-container-checkbox {
+  margin-bottom: 40px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.span-icon {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
+  margin-right: 12px;
+}
+
+.check {
+  color: #000;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21429;
+  text-transform: uppercase;
+}
+
+input:checked+.check>.span-icon {
+  stroke: #F4F4FD;
+  stroke-width: 1px;
+  background: #000;
+  border: none;
+}
+
+.link-paragraf {
+  color: #000;
+  text-decoration-line: underline;
+  margin-left: 2px;
+}
+
+.button-send {
+  display: inline-flex;
+  padding: 14px 40px;
+  align-items: flex-start;
+  gap: 14px;
+  cursor: pointer;
+  background-color: #000;
+  border: none;
+  border-radius: 100px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+
+}
+
+/* ================ Footer =============== */
+
+.bottom {
+  display: flex;
+  max-width: 1200px;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.bottom-container {
+  display: flex;
+  margin-right: auto;
+}
+
+.bottom-list {
+  display: flex;
+  gap: 24px;
+}
+
+.bottom-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.41667;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.sign-container {
+  display: flex;
+}
+
+.sign {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.41667;
+  text-transform: uppercase;
+  text-align: center;
   color: #000;
 }
